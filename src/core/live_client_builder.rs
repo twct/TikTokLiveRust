@@ -30,11 +30,11 @@ impl TikTokLiveBuilder
     ///
     pub fn new(user_name: &str) -> Self
     {
-        let env = Env::default()
+        /*let env = Env::default()
             .filter_or("MY_LOG_LEVEL", "info");
         Builder::from_env(env)
             .filter_module("my_crate::module", LevelFilter::Debug)
-            .init();
+            .init();*/
         Self
         {
             settings: create_default_settings(user_name),
